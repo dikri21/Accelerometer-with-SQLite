@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/xText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:text="x"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/yText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/xText"
+        android:layout_alignStart="@id/xText"
+        android:layout_marginTop="60dp"
+        android:text="y"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="z"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/zText"
+        android:layout_below="@id/yText"
+        android:layout_alignStart="@id/yText"
+        android:layout_marginTop="60dp"/>
+
+    <Button
+        android:id="@+id/view"
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/zText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp"
+        android:background="@drawable/corners"
+        android:backgroundTint="#3F51B5"
+        android:text="Cek data tersimpan"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
